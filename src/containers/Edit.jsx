@@ -40,11 +40,11 @@ export const Edit = ({data}) => {
     <div>
          <>
       
-      <Modal style={{textAlign:"center"}} title="Evolution" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+      <Modal style={{textAlign:"center"}} title="Evoluciona!" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
         <p>Editar comentario</p>
         
      
-        <TextArea rows={4} placeholder="maxLength is 100" maxLength={100} onChange={handleInputChange} />
+        <TextArea rows={4} placeholder="100 caracteres maximo!" maxLength={100} onChange={handleInputChange} />
         
       </Modal>
     </>

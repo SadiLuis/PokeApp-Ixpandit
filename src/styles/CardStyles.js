@@ -2,28 +2,28 @@ import styled from "styled-components";
 
 
 export const CardsGrid = styled.div`
-  margin-top: 20px;
+  margin: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  grid-gap: 16px;
+  grid-template-columns: repeat(6, minmax(160px, 1fr));
+  grid-gap: 10px;
   text-align: center;
   
 `;
 
 export const CardDiv = styled.div`
   width: 170px;
-  background:linear-gradient(to bottom right, blue, white);
-  border-radius: 11px;
+  background:linear-gradient(to bottom right, cyan ,blue);
+  border-radius: 15px;
   text-align: center;
   margin-Left: 10px;
   & > img {
     width: 170px;
     height: 108px;
-    border-radius: 11px;
+    border-radius: 15px;
   }
   :hover {
-    
-    background:rgba(600, 115, 18, 0.53);
+    transform: scaleX(1.2);
+    background:linear-gradient(to bottom right, blue ,cyan);
   }
   
 `;
@@ -86,7 +86,4 @@ display: grid;
 place-content: center;
 margin-top:20px;
 
-`
-export const Fondo=styled.div`
-background-image:url("https://3.bp.blogspot.com/-L007IjhoKfs/WOfj7HBLr-I/AAAAAAAAGdc/ujDWs09gqk4vNiMP_3L-7IoiHODfT58VgCLcB/s1600/pokemon-9.jpg")
 `

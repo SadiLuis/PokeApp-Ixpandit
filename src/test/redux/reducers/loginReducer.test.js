@@ -11,13 +11,13 @@ describe('prueba en LoginReducer',()=>{
         const action={
             type:typesLogin.login,
             payload: {
-             email:"camila@hotmail.com",
+             email:"sadito@hotmail.com",
              password:12345678
             }
         }
         const state=loginReducers(initState,action);
         expect(state).toEqual({user:{
-            email:"camila@hotmail.com",
+            email:"sadito@hotmail.com",
             password:12345678
         }})
     })
@@ -25,7 +25,7 @@ describe('prueba en LoginReducer',()=>{
 
 test('Cerrar sesión ',()=>{
     const initialState={
-        email:"camila@hotmail.com",
+        email:"sadito@hotmail.com",
         password:12345678
     }
     const action={
@@ -36,7 +36,7 @@ test('Cerrar sesión ',()=>{
 })
  test('estado por defecto',()=>{
     const initialState={
-        email:"camila@hotmail.com",
+        email:"sadito@hotmail.com",
         password:12345678
     }
     const action ={

@@ -47,7 +47,7 @@ export const Detail = () => {
     <Descriptions.Item label="Base Experience">{pokemon?.base_experience}</Descriptions.Item>
     <Descriptions.Item label="Species">{pokemon.species?.name}</Descriptions.Item>
    </Descriptions>
-   <Button onClick={()=>handlerMore(pokemon.id)}>+</Button>
+   <Button onClick={()=>handlerMore(pokemon.id)}>Deseas agregarlo como favorito?</Button>
    {
                 modal === true ? <More id={pokemon.id} urlImage={pokemon.sprites?.front_default} /> : ''
             }

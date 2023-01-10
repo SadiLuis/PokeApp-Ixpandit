@@ -22,7 +22,7 @@ export const SingIn = () => {
       
    
     <Form
-      style={{width:"50vw",textAlign:"center", marginRight:"auto",marginLeft:"auto",marginTop:"20px"}}
+      style={{width:"50vw",textAlign:"center", marginRight:"auto",marginLeft:"auto",marginTop:"20%"}}
       name="basic"
       labelCol={{ span: 8 }}
       wrapperCol={{ span: 16 }}
@@ -33,35 +33,35 @@ export const SingIn = () => {
     >
       <Form.Item
      
-        label="Email"
+        label="Correo"
         name="email"
        
-        rules={[{ required: true, message: 'Please input your email!' }]}
+        rules={[{ required: true, message: 'Porfavor ingrese su correo!' }]}
       >
         <Input />
       </Form.Item >
 
       <Form.Item
         
-        label="Password"
+        label="Contraseña"
         name="password"
        
-        rules={[{ required: true, message: 'Please input your password!' }]}
+        rules={[{ required: true, message: 'Porfavor ingrese su contraseña!' }]}
       >
         <Input.Password />
       </Form.Item>
 
       <Form.Item name="remember" valuePropName="checked" wrapperCol={{ offset: 8, span: 16 }}>
-        <Checkbox style={{color:"white"}}>Remember me</Checkbox>
+        <Checkbox style={{color:"black"}}>Recordarme</Checkbox>
       </Form.Item>
 
       <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
         <Button   style={{backgroundColor:"#2CE6E5",width:"30vw",borderRadius:"20px",color:"white"}}   htmlType="submit" >
-          Sing In
+          Ingresar
         </Button>
       </Form.Item>
     </Form>
-    <div style={{marginLeft:"55vw",}}>
+    <div style={{marginLeft:"52.5vw",}}>
       <Button type="submit" variant="outline-info" style={{ backgroundColor:"#1F233E",contain:"content",borderRadius:"100%",width:"50px",height:"50px"}} onClick={()=> dispatch(GoogleLogin())}  >
         <Image src="https://res.cloudinary.com/danimel/image/upload/v1655397953/google_ywov5r.png" alt="" />
       </Button>
@@ -70,7 +70,7 @@ export const SingIn = () => {
         <Image src="https://res.cloudinary.com/danimel/image/upload/v1655397954/facebook_emylt7.png" alt="" />
       </Button>
       <Link to="/register">
-      <Button>Register</Button>
+      <Button style={{backgroundColor:"#2CE6E5", borderRadius:"20px", color:"white", marginLeft:"50px", }} >Registro</Button>
       </Link>
       </div>
     </div>

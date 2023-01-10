@@ -3,7 +3,7 @@ import { typesLogin } from "../../../redux/types/types"
 
 describe('Verificar acciones de Login', ()=>{
     test('validar login sincronico',()=>{
-        const email = 'melisamendozamogolln@gmail.com'
+        const email = 'sadiluisrueda.94@gmail.com'
         const password ='12345678'
         const loginAction= actionLoginSync(email,password)
         expect(loginAction).toEqual({
@@ -28,10 +28,10 @@ describe('Verificar acciones de LogoUt', ()=>{
 })
 describe('Verificar acciones de register', ()=>{
     test ('validar register sincronico',()=>{
-        const nickname= "melisa"
-        const email="melisamendozamogollon@gmail.com" 
+        const nickname= "sadiluis"
+        const email="sadiluisrueda.94@gmail.com" 
         const confirm="12345678"
-        const phone="3206675848"
+        const phone="47815414658"
         const registerAction= registerUserSync
          (nickname,email, confirm,phone)
         expect(registerAction).toEqual({

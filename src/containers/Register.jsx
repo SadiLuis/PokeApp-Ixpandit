@@ -94,15 +94,15 @@ import { registerUserAsync } from '../redux/actiones/actionLogin';
       >
         <Form.Item
           name="email"
-          label="E-mail"
+          label="Correo"
           rules={[
             {
               type: 'email',
-              message: 'The input is not valid E-mail!',
+              message: 'El correo ingresado no es correcto!',
             },
             {
               required: true,
-              message: 'Please input your E-mail!',
+              message: 'Porfavor ingrese un correo valido!',
             },
           ]}
         >
@@ -111,11 +111,11 @@ import { registerUserAsync } from '../redux/actiones/actionLogin';
   
         <Form.Item
           name="password"
-          label="Password"
+          label="Contraseña"
           rules={[
             {
               required: true,
-              message: 'Please input your password!',
+              message: 'Porfavor ingrese su contraseña!',
             },
           ]}
           hasFeedback
@@ -125,13 +125,13 @@ import { registerUserAsync } from '../redux/actiones/actionLogin';
   
         <Form.Item
           name="confirm"
-          label="Confirm Password"
+          label="Confirme su contraseña"
           dependencies={['password']}
           hasFeedback
           rules={[
             {
               required: true,
-              message: 'Please confirm your password!',
+              message: 'Porfavor confirme su contraseña!',
             },
             ({ getFieldValue }) => ({
               validator(_, value) {
@@ -139,7 +139,7 @@ import { registerUserAsync } from '../redux/actiones/actionLogin';
                   return Promise.resolve();
                 }
   
-                return Promise.reject(new Error('The two passwords that you entered do not match!'));
+                return Promise.reject(new Error('Las contraseñas no son las mismas!'));
               },
             }),
           ]}
@@ -149,12 +149,12 @@ import { registerUserAsync } from '../redux/actiones/actionLogin';
   
         <Form.Item
           name="nickname"
-          label="Nickname"
-          tooltip="What do you want others to call you?"
+          label="Usuario"
+          tooltip="Como será tu apodo?"
           rules={[
             {
               required: true,
-              message: 'Please input your nickname!',
+              message: 'Porfavor ingrese su nombre de usuario!',
               whitespace: true,
             },
           ]}
@@ -164,16 +164,16 @@ import { registerUserAsync } from '../redux/actiones/actionLogin';
   
         <Form.Item
           name="phone"
-          label="Phone Number"
+          label="Número de Telefono"
           rules={[
             {
               required: true,
-              message: 'Please input your phone number!',
+              message: 'Porfavor ingrese su numero de telefono!',
             },
           ]}
         >
           <Input
-            addonBefore={prefixSelector}
+           
             style={{
               width: '100%',
             }}
@@ -187,19 +187,19 @@ import { registerUserAsync } from '../redux/actiones/actionLogin';
           rules={[
             {
               validator: (_, value) =>
-                value ? Promise.resolve() : Promise.reject(new Error('Should accept agreement')),
+                value ? Promise.resolve() : Promise.reject(new Error('Debes aceptar los acuerdos')),
             },
           ]}
           {...tailFormItemLayout}
         >
           <Checkbox>
-            I have read the <a href="">agreement</a>
+            Leí los <a href="">acuerdos</a>
           </Checkbox>
         </Form.Item>
         <Form.Item {...tailFormItemLayout}>
         
           <Button type="primary" htmlType="submit" >
-            Register
+            Registrarse
           </Button>
          
         </Form.Item>

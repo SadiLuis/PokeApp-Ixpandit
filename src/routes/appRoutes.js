@@ -40,7 +40,7 @@ export const AppRoutes = () => {
         
     <Routes>
     <Route path="/singin" element={
-            <PublicRouter isAutentication={isLoggedIn}>
+            <PublicRouter isAutentication={isLoggedIn}  >
                <SingIn />
             </PublicRouter>
 

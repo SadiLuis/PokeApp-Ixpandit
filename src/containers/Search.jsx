@@ -48,7 +48,7 @@ export const SearchPokemon = () => {
     <div>
      <NavBar/>  
     
-    <Search placeholder="input search text" onSearch={onSearch} enterButton />
+    <Search placeholder="Ingrese el nombre del Pokémon que dese buscar" onSearch={onSearch} enterButton />
    
    
   

@@ -38,11 +38,12 @@ export const ListComment = () => {
       <List.Item>
         <List.Item.Meta
           avatar={<Avatar src={item.image} />}
-          title={<a href="https://ant.design">{item.name}</a>}
+          title={<a href="/">{item.name}</a>}
         description={<article>{item.comment}</article>}
         />
-        <Button onClick={()=>handleDelete(item.id)}><ClearOutlined/></Button>
-       <Button onClick={()=>handlerEditar(item.id)}><EditOutlined /></Button> 
+        <Button onClick={()=>handleDelete(item.id)}> Eliminar <ClearOutlined/></Button>
+        
+       <Button onClick={()=>handlerEditar(item.id)}> Editar <EditOutlined /></Button> 
       </List.Item>
      )}
      />
