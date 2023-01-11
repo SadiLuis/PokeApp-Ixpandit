@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const CardsGrid = styled.div`
   margin: 20px;
   display: grid;
-  grid-template-columns: repeat(6, minmax(160px, 1fr));
+  grid-template-columns: repeat(5, minmax(160px, 1fr));
   grid-gap: 10px;
   text-align: center;
   

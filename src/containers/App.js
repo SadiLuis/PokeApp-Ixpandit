@@ -17,7 +17,7 @@ import { FooterApp } from '../components/FooterApp';
 
 export const App = () => {
   const dispatch= useDispatch()
-  const url = "https://pokeapi.co/api/v2/pokemon/?limit=25&offset=0";
+  const url = "https://pokeapi.co/api/v2/pokemon/?limit=40&offset=0";
   const [pokemon, setPokemon] = useState([""]);
   const getData = async () => {
     const { data } = await axios.get(url)

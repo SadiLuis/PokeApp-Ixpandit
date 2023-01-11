@@ -1,6 +1,5 @@
 import { DatabaseOutlined, HomeOutlined, LogoutOutlined } from '@ant-design/icons';
 import {  Button, Descriptions } from 'antd'
-import 'antd/dist/antd.css';
 import axios from 'axios'
 import { useDeviceLanguage } from 'firebase/auth';
 import React, { useMemo, useState } from 'react'
@@ -42,10 +41,10 @@ export const Detail = () => {
     <Descriptions.Item label="De lado">
     <img src={pokemon.sprites?.front_shiny} alt="" srcSet="" />
     </Descriptions.Item>
-    <Descriptions.Item label="Weight">{pokemon?.weight}</Descriptions.Item>
-    <Descriptions.Item label="Height">{pokemon?.height}</Descriptions.Item>
-    <Descriptions.Item label="Base Experience">{pokemon?.base_experience}</Descriptions.Item>
-    <Descriptions.Item label="Species">{pokemon.species?.name}</Descriptions.Item>
+    <Descriptions.Item label="Peso">{pokemon?.weight}</Descriptions.Item>
+    <Descriptions.Item label="Peso">{pokemon?.height}</Descriptions.Item>
+    <Descriptions.Item label="Experiencia Base">{pokemon?.base_experience}</Descriptions.Item>
+    <Descriptions.Item label="Nombre de especie">{pokemon.species?.name}</Descriptions.Item>
    </Descriptions>
    <Button onClick={()=>handlerMore(pokemon.id)}>Deseas agregarlo como favorito?</Button>
    {
